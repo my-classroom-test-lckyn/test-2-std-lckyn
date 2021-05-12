@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "test1",
-      "setup": "",
+      "setup": "echo \"Inputs = 5\"",
       "run": "python3 ./test/test_1.py",
       "input": "5",
       "output": "25",
@@ -12,10 +12,20 @@
     },
     {
       "name": "test2",
-      "setup": "",
+      "setup": "echo \"Inputs = 2\"",
       "run": "python ./test/test_1.py",
       "input": "2",
       "output": "4",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test3",
+      "setup": "echo \"Inputs = 10\"",
+      "run": "python3 ./test/test_1.py",
+      "input": "10",
+      "output": "100",
       "comparison": "included",
       "timeout": 1,
       "points": 10

@@ -29,6 +29,36 @@
       "comparison": "included",
       "timeout": 1,
       "points": 10
+    },
+    {
+      "name": "test2_1",
+      "setup": "echo \"Inputs = 10\"",
+      "run": "python3 ./test/test_2.py",
+      "input": "10",
+      "output": "20",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test2_2",
+      "setup": "echo \"Inputs = 5\"",
+      "run": "python3 test/test_2.py",
+      "input": "5",
+      "output": "10",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test2_3",
+      "setup": "echo \"Inputs = 1\"",
+      "run": "python test/test_2.py",
+      "input": "1",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
     }
   ]
 }
